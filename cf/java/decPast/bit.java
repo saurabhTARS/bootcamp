@@ -1,3 +1,4 @@
+package decPast;
 import java.util.Scanner;
 
 public class bit
