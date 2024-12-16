@@ -1,4 +1,4 @@
-package decTwelve;
+package _2024_12_12;
 import java.util.Scanner;
 
 public class luckyNum {

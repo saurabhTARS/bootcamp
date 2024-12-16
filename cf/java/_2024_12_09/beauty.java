@@ -1,4 +1,4 @@
-package decPast;
+package _2024_12_09;
 import java.util.Scanner;
 import java.lang.Math;
 

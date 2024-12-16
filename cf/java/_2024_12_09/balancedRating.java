@@ -1,4 +1,5 @@
-package decPast;
+package _2024_12_09;
+
 import java.util.*;
 
 public class balancedRating {

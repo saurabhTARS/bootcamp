@@ -1,27 +1,26 @@
-package decTen;
+package _2024_12_10;
 
 import java.util.Scanner;
 
-public class presentGift {
+public class easyHard {
     public static void main(String[] args)
     {
         Scanner s = new Scanner(System.in);
         int n = Integer.parseInt(s.nextLine());
-        int[] result = new int[n];
+        int result = 0;
 
         String[] words = s.nextLine().split("\\s");
 
         while(n > 0)
         {
-            result[Integer.parseInt(words[n-1]) - 1] = n;
+            result = result | (Integer.parseInt(words[n-1]));
             n--;
         }
 
-        for(int i = 0; i < words.length; i++)
-            System.out.print(result[i] + " ");
-
+        if(result == 1)
+            System.out.println("HARD");
+        else 
+            System.out.println("EASY");
         s.close();
-
     }
 }
-

@@ -1,4 +1,4 @@
-package decPast;
+package _2024_12_09;
 
 import java.util.Scanner;
 
@@ -34,7 +34,7 @@ public class soft
         int salt = (params[5]) / (params[7] * params[0]);
 
         System.out.println(Math.min(Math.min(drink, slice), salt));
-
+        myObj.close();
         // System.out.println(params[0]);
     }
 }

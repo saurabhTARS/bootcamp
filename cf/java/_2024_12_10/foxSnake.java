@@ -1,4 +1,4 @@
-package decTen;
+package _2024_12_10;
 import java.util.*;
 
 public class foxSnake {

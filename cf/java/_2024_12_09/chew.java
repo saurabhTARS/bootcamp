@@ -1,4 +1,4 @@
-package decPast;
+package _2024_12_09;
 import java.util.Scanner;
 
 public class chew
@@ -26,5 +26,6 @@ public class chew
         if(Character.getNumericValue(result.charAt(0)) == 0)
             result.setCharAt(0, nums.charAt(0));
         System.out.println(result);
+        myObj.close();
     }
 }

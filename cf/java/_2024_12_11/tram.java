@@ -1,4 +1,4 @@
-package decEleven;
+package _2024_12_11;
 import java.util.Scanner;
 
 public class tram {

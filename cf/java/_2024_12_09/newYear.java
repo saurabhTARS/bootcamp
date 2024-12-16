@@ -1,5 +1,5 @@
-package decPast;
-import java.util.*;
+package _2024_12_09;
+import java.util.Scanner;
 
 public class newYear {
     public static void main(String[] args)

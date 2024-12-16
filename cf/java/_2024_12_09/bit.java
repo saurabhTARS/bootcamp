@@ -1,4 +1,4 @@
-package decPast;
+package _2024_12_09;
 import java.util.Scanner;
 
 public class bit
@@ -32,6 +32,6 @@ public class bit
             // System.out.println("The input is not an integer : " + userName);
             System.exit(0);
         }
-
+        myObj.close();
     }
 }
