@@ -1,3 +1,4 @@
+package _2025_01_13;
 import java.util.Scanner;
 
 public class boringApartment {
