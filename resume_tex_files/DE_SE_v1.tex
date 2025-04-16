@@ -1,0 +1,205 @@
+\documentclass[letterpaper,10.99pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}  % For icons
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% Custom heading font
+\newcommand{\customHeading}[1]{%
+\fontfamily{phv}\selectfont\Huge #1
+}
+
+\begin{document}
+
+\begin{center}
+\textbf{\customHeading{Saurabh Prasad}} \\
+\small \faPhone \hspace{0.5em} +91-7019948124 \hspace{1em}
+\faEnvelope \hspace{0.5em} \href{[mailto:saurabhprasad12@email.com](mailto:saurabhprasad12@email.com)}{saurabhprasad12@gmail.com} \hspace{1em}
+\faLinkedin \hspace{0.5em} \href{https://linkedin.com/in/saurabh1201}{linkedin.com/in/saurabh1201} \hspace{1em}
+\faGithub \hspace{0.5em} \href{https://github.com/saurabhTARS}{github.com/saurabhTARS}
+\end{center}
+
+\begin{minipage}[t]{0.60\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+\section{Experience}
+\resumeSubHeadingList
+\resumeSubheading
+{Data Engineer II}{Sept 2022 - Present}
+{Jash Data Sciences Pvt. Ltd.}{Pune, India}\\
+\resumeSubHeadingList
+
+\resumeItem{\textbullet\ \textbf{Data Pipeline Development:} Built pipelines in Azure Data Factory and Databricks for extracting data from REST APIs and MongoDB, enabling comprehensive
+analysis of SMS, calls, and IVR data to assess healthcare provider and client conversation accuracy. The Medallion Architecture for
+Delta Lake storage improved Power BI integration.}
+
+% \resumeItem{\textbullet\ \textbf{Dynamic DAG Creation:} Created dynamic and reusable Airflow DAGs to 
+%     efficiently process data from multiple sources, significantly improving pipeline 
+%     scalability and adaptability to new data sources and evolving client requirements.}
+\resumeItem{\textbullet\ \textbf{Java Microservices and Legacy Integration:} Led the development of scalable Java-based microservices to ingest and expose REST APIs, integrating the legacy Advantage Database Server to maintain backward compatibility and ensure seamless data access across services.}
+\resumeItem{\textbullet\ \textbf{Big Data ETL and Analytics Pipeline:} Built distributed ETL pipelines using Python and Apache Spark, and architected big data workflows with Hadoop to process over 5 TB of logs daily, enabling analytics, anomaly detection, and reducing data latency by 40\%.}
+
+\resumeItem{\textbullet\ \textbf{Real-Time Data Processing:} Processed and transformed streaming data from 
+    Google Pub/Sub using Databricks and PySpark, enabling real-time data consumption.}
+\resumeItem{\textbullet\ \textbf{Automated Data Transfers:} Automated data transfer from AWS RDS (PostgreSQL) to Google Cloud Storage 
+    and loaded it into BigQuery using Apache Airflow (GCP Composer).}
+\resumeSubHeadingListEnd
+
+\resumeSubheading
+{Project Engineer}{Aug 2021 - Aug 2022}
+{Wipro Technologies}{Bangalore, India}\\
+\resumeSubHeadingList
+\resumeItem{\textbullet\ \textbf{Data Migration:} Led data migration efforts 
+    for a major banking client, developing and monitoring Ab Initio data pipelines to 
+    ensure seamless migration of petabyte-scale datasets with minimal downtime.}
+\resumeItem{\textbullet\ \textbf{Big Data Processing:} Utilized big data technologies 
+    to handle and process high-volume datasets in real time, enabling efficient data 
+    transformation and timely insights critical for the bank’s operations.}
+\resumeItem{\textbullet\ \textbf{Pipeline Optimization:} Optimized and maintained data pipelines, 
+    ensuring high reliability, performance, and data accuracy across large-scale 
+    distributed systems, supporting real-time analytics and decision-making.}
+\resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+\sectionsep
+
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\resumeSubheading
+{Hate Speech Detection on Social Media}{Jan 2021 - July 2021}
+{Final Year Project}{Bangalore, India}
+\resumeSubHeadingList
+    \resumeItem{\textbullet\ Developed a machine learning model to detect 
+        hate speech on Twitter using Deep Belief Network (DBN) for high-dimensional 
+        feature extraction and Softmax Regression for classification.}
+    \resumeItem{\textbullet\ Applied various word embedding techniques to improve accuracy, 
+        achieving significant results on a publicly available Twitter dataset for hate speech.}
+    \resumeItem{\textbullet\ Addressed the challenge of sparse, high-dimensional data, 
+        enabling more accurate, real-time hate speech detection with potential applications in 
+        content moderation.}
+\resumeSubHeadingListEnd
+\sectionsep
+
+\section{Education}
+\resumeSubheading
+{B.E. in Computer Science \& Engineering}{Aug 2017 - July 2021}
+{Ramaiah Institute of Technology}{Bangalore, India}
+\sectionsep
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\resumeSubHeadingList
+
+\resumeItem{\textbullet\ \textbf{Programming:} Python (Pandas, PySpark), SQL, Java}
+\resumeItem{\textbullet\ \textbf{Data Orchestration & Workflow Management:} Apache Airflow, Dagster, AWS Data Pipeline}
+\resumeItem{\textbullet\ \textbf{Data Warehousing & Analytics:} BigQuery, Snowflake, Databricks (Delta Lake), Amazon Redshift}
+\resumeItem{\textbullet\ \textbf{Cloud Platforms:} Azure Data Factory, Google Cloud Platform (GCS, BigQuery, Dataflow, Pub/Sub)}
+\resumeItem{\textbullet\ \textbf{Databases:} PostgreSQL, MySQL, MongoDB, Cassandra, SQL Server}
+\resumeItem{\textbullet\ \textbf{Data Integration & ETL Tools:} Apache Spark, PySpark, Kafka, AWS Glue, Databricks}
+\resumeItem{\textbullet\ \textbf{Version Control & CI/CD:} Git (GitHub, GitLab), CircleCI, Jenkins, Docker}
+\resumeSubHeadingListEnd
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Relevant Coursework}
+\resumeSubHeadingList
+\resumeItem{\textbullet\ \textbf{Mathematics:} Linear Algebra, Calculus, Probability and Statistics}
+\resumeItem{\textbullet\ \textbf{Data Structures and Algorithms:} Arrays, Linked Lists, Trees, Sorting, Searching}
+\resumeItem{\textbullet\ \textbf{Machine Learning and AI:} Supervised Learning, Unsupervised Learning, Neural Networks}
+\resumeItem{\textbullet\ \textbf{Systems and Databases:} Operating Systems, Computer Networks, SQL, Data Warehousing, Cloud Computing}
+\resumeItem{\textbullet\ \textbf{Software Engineering:} Design Patterns, System Design}
+\resumeSubHeadingListEnd
+\sectionsep
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications}
+\resumeSubHeadingList
+\resumeItem{\textbullet\ IBM : Python 101 for Data Science}
+\resumeItem{\textbullet\ IBM : Blockchain Essentials}
+\resumeItem{\textbullet\ IBM : Data Analysis with Python}
+\resumeSubHeadingListEnd
+
+\section{Achievements}
+\resumeSubHeadingList
+\resumeItem{\textbullet\ Rank of 725 in KCET-2017}
+\resumeItem{\textbullet\ Won an essay writing competition on Swami Vivekanand}
+\resumeSubHeadingListEnd
+
+\end{minipage}
+\end{document}
